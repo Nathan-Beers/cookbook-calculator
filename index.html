@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Mildreds Dessert Calculator</title>
+</head>
+<body>
+    <div id="container">
+        <div id="logo-container">
+            <img id="mildreds-logo" src="https://www.mildreds.co.uk/content/uploads/2020/07/mildreds-blue.png">
+        </div>
+        <div id="recipe">
+            <h2 id="recipe-name">Cheesecake</h2>
+        </div>
+        <div id="input-container">
+            <input oninput="getBatchSize()" id="batch" type="number" placeholder="Enter Batch Size">
+        </div>
+        <table id="ingredients-container">
+            <tr>
+                <th class="ingredient" id="ing-1">Biscoff crumb(Base):</th>
+                <td class="value" id="ing-1-amount">kg</td>
+                <td class="ingredient" id="ing-2">Table Salt(Base):</td>
+                <td class="value" id="ing-2-amount">g</td>
+            </tr>
+            <tr>
+                <td class="ingredient" id="ing-3">Coconut Oil(Base):</td>
+                <td class="value" id="ing-3-amount">g</td>
+                <td class="ingredient" id="ing-4">Kerrymaid(Base):</td>
+                <td class="value" id="ing-4-amount">g</td>
+            </tr>
+            <tr>
+                <td class="ingredient" id="ing-5">Soya Milk:</td>
+                <td class="value" id="ing-5-amount">L</td>
+                <td class="ingredient" id="ing-6">Agar:</td>
+                <td class="value" id="ing-6-amount">g</td>
+            </tr>
+            <tr>
+                <td class="ingredient" id="ing-7">Nutmeg:</td>
+                <td class="value" id="ing-7-amount">g</td>
+                <td class="ingredient" id="ing-8">Vanilla essence:</td>
+                <td class="value" id="ing-8-amount">L</td>
+            </tr>
+            <tr>
+                <td class="ingredient" id="ing-9">Table salt:</td>
+                <td class="value" id="ing-9-amount">g</td>
+                <td class="ingredient" id="ing-10">Vitalite:</td>
+                <td class="value" id="ing-10-amount">kg</td>
+            </tr>
+            <tr>
+                <td class="ingredient" id=ing-11>Violife Cream Cheese:</td>
+                <td class="value" id="ing-11-amount">kg</td>
+                <td class="ingredient" id="ing-12">Silkin Tofu:</td>
+                <td class="value" id="ing-12-amount">kg</td>
+            </tr>
+            
+        </table>
+
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

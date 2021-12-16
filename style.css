@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: pink;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Patrick+Hand&display=swap');
+
+#logo-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 20vh;
+    width: 100vw;
+
+   
+}
+
+#mildreds-logo {
+    width: 400px;
+    height: 50px;
+    margin-top: 40px;
+}
+
+
+
+#recipe {
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#input-container {
+    display: flex;
+   justify-content: center;
+   width: 100vw;
+}
+
+input {
+    text-align: center;
+
+}
+
+.ingredient {
+    color: #1B9CD9;
+    font-weight: bold;
+}
+
+#ingredients-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100%;
+    margin-top: 40px;
+    
+    
+}
+
+td {
+    margin: 20px 80px;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width: 425px) {
+    #mildreds-logo {
+        width: 200px;
+        height: 25px;
+        margin-top: 40px;
+    }
+
+    body {
+        font-size: 12px;
+    }
+    td {
+        margin: 0 10px;
+        padding: 10px;
+    }
+}
