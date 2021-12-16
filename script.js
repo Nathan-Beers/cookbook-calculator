@@ -50,5 +50,4 @@ let getBatchSize = () => {
     ing10.innerHTML = `${vitalite.toFixed(2)} kg`;
     ing11.innerHTML = `${violife.toFixed(2)} kg`;
     ing12.innerHTML = `${tofu.toFixed(2)} kg`;
-    console.log(newBatch)
 };
