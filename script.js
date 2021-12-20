@@ -11,13 +11,13 @@ let ing9 = document.getElementById("ing-9-amount");
 let ing10 = document.getElementById("ing-10-amount");
 let ing11 = document.getElementById("ing-11-amount");
 let ing12 = document.getElementById("ing-12-amount");
-
+let ing13 = document.getElementById("ing-13-amount");
 
 // Base recipes need to be placed in an array
 // Then set to change the innerHTML 
 // The batch size can be calculated using the array rather than HTML
 
-let cheesecake = [0.54, 1, 0.075, 0.075, 0.619, 12, 0.5, 0.0375, 1, 0.657, 0.488, 0.825];
+let cheesecake = [0.54, 1, 0.075, 0.075, 0.619, 12, 0.5, 0.0375, 1, 0.657, 0.488, 0.825, 0.68];
 let baseCheesecake = cheesecake.map((ingredients) => {
     base = (ingredients / 30);
     return base;
@@ -38,6 +38,7 @@ let getBatchSize = () => {
     let vitalite = baseCheesecake[9] * batch;
     let violife = baseCheesecake[10] * batch;
     let tofu = baseCheesecake[11] * batch;
+    let biscoffSpread = baseCheesecake[12] * batch;
     ing1.innerHTML = `${biscoff.toFixed(2)} kg`;
     ing2.innerHTML = `${salt.toFixed(1)} g`;
     ing3.innerHTML = `${coconutOil.toFixed(2)} kg`;
@@ -50,4 +51,5 @@ let getBatchSize = () => {
     ing10.innerHTML = `${vitalite.toFixed(2)} kg`;
     ing11.innerHTML = `${violife.toFixed(2)} kg`;
     ing12.innerHTML = `${tofu.toFixed(2)} kg`;
+    ing13.innerHTML = `${biscoffSpread.toFixed(2)} kg`;
 };
